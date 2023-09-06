@@ -5,15 +5,18 @@
 
 <!-- badges: start -->
 
-[![Travis build
-status](https://travis-ci.com/jackmwolf/pcsstools.svg?branch=master)](https://travis-ci.com/jackmwolf/pcsstools)
+[![CRAN
+status](https://www.r-pkg.org/badges/version/pcsstools)](https://CRAN.R-project.org/package=pcsstools)
+![CRAN
+Downloads](https://cranlogs.r-pkg.org/badges/grand-total/pcsstools)
+[![R-CMD-check](https://github.com/jackmwolf/pcsstools/workflows/R-CMD-check/badge.svg)](https://github.com/jackmwolf/pcsstools/actions)
 <!-- badges: end -->
 
 ## Overview
 
-pcsstools is an in-development R package to describe various regression
-models using only pre-computed summary statistics (PCSS) from
-genome-wide association studies (GWASs) and PCSS repositories such as
+pcsstools is an R package to describe various regression models using
+only pre-computed summary statistics (PCSS) from genome-wide association
+studies (GWASs) and PCSS repositories such as
 [GeneAtlas](http://geneatlas.roslin.ed.ac.uk/). This eliminates the
 logistic, privacy, and access concerns that accompany the use of
 individual patient-level data (IPD).
@@ -37,10 +40,14 @@ defined via functions of other phenotypes. Supported functions include:
 
 ## Installation
 
-pcsstools is not currently available on CRAN.
+You can install pcsstools from CRAN with
+
+    install.packages("pcsstools")
+
+### Development Version
 
 You can install the in-development version of pcsstools from
-[GitHub](https://github.com/) with:
+[GitHub](https://github.com/) with
 
     # install.packages("devtools")
     devtools::install_github("jackmwolf/pcsstools")
@@ -273,10 +280,9 @@ And here’s the result we would get using IPD:
 Following are the key references for the functions in this package
 
 -   Wolf, J.M., Westra, J., and Tintle, N. (2021). Using summary
-    statistics to evaluate the genetic architecture of multiplicative
-    combinations of initially analyzed phenotypes with a flexible choice
-    of covariates. *bioRxiv*.
-    <https://doi.org/10.1101/2021.03.08.433979>.
+    statistics to model multiplicative combinations of initially
+    analyzed phenotypes with a flexible choice of covariates. *Frontiers
+    in Genetics*, 25, 1962. <https://doi.org/10.3389/fgene.2021.745901>.
 
 -   Wolf, J.M., Barnard, M., Xueting, X., Ryder, N., Westra, J., and
     Tintle, N. (2020). Computationally efficient, exact,
